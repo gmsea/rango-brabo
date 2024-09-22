@@ -1,0 +1,69 @@
+.foto {
+    width: 200px;
+    height: 150px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffcd1f;
+}
+
+header {
+    display: flex;
+    padding: 10px;
+    text-align: left;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+main section p {
+    text-align: left;
+}
+
+main section ul {
+    padding-left: 7%;
+}
+
+main section ul li {
+    text-align: left;
+}
+
+.recipe {
+    background-color: #fb285e;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: calc(30% - 20px);
+}
