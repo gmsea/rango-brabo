@@ -36,6 +36,10 @@ header nav ul {
     margin: 0;
 }
 
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
 
 main#principal {
     flex: 1;
