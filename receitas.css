@@ -60,7 +60,6 @@ main section ul li {
 .recipes {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 30px;
     padding: 20px;
 }
@@ -79,15 +78,7 @@ main section ul li {
 }
 
 .recipe img {
-    width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner da receita */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 100%;
+    height: auto;
     border-radius: 10px;
 }
-
-@media (max-width: 600px) {
-    .recipe {
-        min-width: 100%; /* Em telas pequenas, as receitas ocuparão toda a largura da tela */
-        max-width: 100%;
-    }
-}
-
