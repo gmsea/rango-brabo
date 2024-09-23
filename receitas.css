@@ -57,13 +57,37 @@ main section ul li {
     text-align: left;
 }
 
+.recipes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
 .recipe {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
     background-color: #fb285e;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px;
+    border: 5px solid #ddd;
+    border-radius: 30px;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: calc(30% - 20px);
+    margin-bottom: 20%;
 }
+
+.recipe img {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner da receita */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .recipe {
+        min-width: 100%; /* Em telas pequenas, as receitas ocuparão toda a largura da tela */
+        max-width: 100%;
+    }
+}
+
