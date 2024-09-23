@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="formato.css">
-    <link rel="stylesheet" href="cadastro.css">
 </head>
 
 <body>
@@ -20,41 +20,68 @@
     </header>
 
 
-    <main id="cadastro">
+    <main id="cadastro" class="container mt-5">
         <h1>Efetue seu Cadastro</h1>
 
-        <form action="#" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+        <form action="#" method="post" class="mt-4">
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
 
-            <label for="cep">CEP:</label>
-            <input type="cep" id="cep" name="cep" required>
+            <div class="form-group">
+                <label for="cep">CEP:</label>
+                <input type="number" class="form-control" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}" placeholder="XXXXX-XXX" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" class="form-control" id="cidade" name="cidade" required>  
+            </div>
+            
+            <div class="form-group">
+                <label for="estado">Estado (UF):</label>
+                <input type="text" class="form-control" id="estado" name="uf" maxlength="2" required> 
+            </div>
+            
+            <div class="form-group">
+                <label for="rua">Rua:</label>
+                <input type="text" class="form-control" id="rua" name="rua" required>   
+            </div>
+            
+            <div class="form-group">
+                <label for="numero">Número:</label>
+                <input type="number" class="form-control" id="n" name="n" required>    
+            </div>
+            
+            <div class="form-group">
+                <label for="complemento">Complemento:</label>
+                <input type="text" class="form-control" id="complemento" name="complemento" required>
+            </div>
 
-            <label for="cidade">Cidade:</label>
-            <input type="cidade" id="cidade" name="cidade" required>
-
-            <label for="uf">UF:</label>
-            <input type="uf" id="uf" name="uf" required>
-
-            <label for="rua">Rua:</label>
-            <input type="rua" id="rua" name="rua" required>
-
-            <label for="n">N°:</label>
-            <input type="n" id="n" name="n" required>
-
-            <label for="complemento">Complemento:</label>
-            <input type="complemente" id="complemento" name="complemento" required>
+            <button type="submit" class="btn btn-primary btnc-block">Cadastrar</button>
+            
         </form>
 
     </main>
 
 
     <footer>
+
         <p>&copy; Rango Brabo 2024. Todos os direitos reservados.</p>
+        
     </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     
 </body>
