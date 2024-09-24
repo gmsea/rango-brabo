@@ -5,7 +5,7 @@
 }
 
 
-body#principal {
+body {
     display: flex;
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -42,7 +42,7 @@ header {
 
 
 .nav-item {
-    padding-left: 10px; 
+    padding-left: 20px; 
 }
 
 
@@ -96,11 +96,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: auto;
 }
 
 
 footer p {
     margin: 0;
     line-height: 50px;
+    margin-top: auto;
 
 }
