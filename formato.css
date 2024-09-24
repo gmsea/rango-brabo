@@ -1,58 +1,70 @@
-/* 50px x 50px a logo ficaria muito pequena */
+/* Logo 50px x 50px ficaria muito pequena */
 .logo {
     width: 150px;
     height: 150px;
 }
-    
-
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
 
 
-body {
+body#principal {
+    display: flex;
     font-family: Arial, sans-serif;
     font-size: 16px;
     color: #000000;
     line-height: 1.5;
-    display: flex;
     flex-direction: column;
-    min-height: 100vh;
     background-color: #ffcd1f;
+    padding-top: 70px;
+    min-height: 100vh;
 }
 
 
 header {
+    width: 100%;
     display: flex;
-    padding: 10px;
-    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;   
 }
 
 
-header nav ul {
-    padding: 0;
-    margin: 0;
+.navbar {
+    width: 100%;
+    padding-left: 0; 
+    background-color: black;
 }
 
-header nav ul li {
-    display: inline;
-    margin-right: 15px;
+
+.navbar-nav {
+    margin-left: 0; 
+    
 }
+
+
+.nav-item {
+    padding-left: 10px; 
+}
+
+
+.nav-link {
+    color: white;
+}
+
 
 main#principal {
     flex: 1;
-    display : flex;
-    flex-direction:column;
+    height: calc(100vh - 100px) 25px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px;
     background-color: #ffcd1f;
+    padding: 20px;
 }
 
 
-main#principal h1{
+main#principal h1 {
     font-size: 3rem;
     margin-top: 20px;
     text-align: center;
@@ -60,7 +72,7 @@ main#principal h1{
 
 
 main#principal h2 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     margin-bottom: 10px;
     margin-top: 100px;
     text-align: center;
@@ -68,26 +80,27 @@ main#principal h2 {
 
 
 main#principal p {
-    font-size: 1.75rem;
-    font-weight: bold;
+    font-size: 1.55rem;
     margin-top: 5px;
     text-align: center;
-
 }
 
 
-footer{
+footer {
+    height: 50px;
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10px 0;
     position: relative;
     width: 100%;
-    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 footer p {
-    margin-top: 1px;
-    margin-bottom: 1px;
+    margin: 0;
+    line-height: 50px;
+
 }
